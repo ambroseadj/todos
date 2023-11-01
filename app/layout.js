@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Headers from './components/Headers'
+
 import { ChakraProvider } from '@chakra-ui/react'
-import AllRoutes from './AllRoutes'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <body className={inter.className}>
-      <AllRoutes/>
+    
       {children}
       </body>
     </html>
